@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-bottons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+}
+
+.social-bottons a::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #512702, #CF772B);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.5s ease-in;
+}
+
+.social-bottons a:hover::before{
+    transform: scale(0);
+}
+
+.social-bottons a i{
+    transition: 0.5s ease-in;
+}
+
+.social-bottons a:hover i{
+    background: linear-gradient(45deg, #512702, #CF772B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2);
+}
